@@ -1,23 +1,35 @@
 # 2024_TR4_Project
 
-#### Data_from_surveys_and_direct_sources:
+## Data_from_surveys_and_direct_sources:
 
 has data that is coming direclty form summaries of the surveys and EKEs and direct sources like statistics from the ministry of agriculture. Files in this folder:
 
+DATA_MAP_Network_of_Planting_Material_2023_12_08.csv
+DATA_MAP_Rel_Prop_banana_Network_of_Planting_Material.csv
+DATA_MAP_Rel_Prop_plantain_Network_of_Planting_Material.csv
+SUP_Percentage_of_informal_planting_material_by_department.csv
 
 
-#### Data_processed
+
+## Data_processed
 
 Has data that involves some steps in the functions and code of this repository. Files in this folder:
 
 
-#### get_matrices_planting_material_trade
+DATA_MAP_Rare_Seed_network_demand_Banana_Formal.csv
+DATA_MAP_Rare_Seed_network_demand_Banana_INFormal.csv
+DATA_MAP_Rare_Seed_network_demand_Plantain_Formal.csv
+DATA_MAP_Rare_Seed_network_demand_Plantain_INFormal.csv
+DATA_MAP_Seed_network_demand_Banana_Formal.csv
+DATA_MAP_Seed_network_demand_Banana_INFormal.csv
+DATA_MAP_Seed_network_demand_Plantain_Formal.csv
+DATA_MAP_Seed_network_demand_Plantain_INFormal.csv
+
+## get_matrices_planting_material_trade
 
 This script conducts a set the adjacency matrices of movement of banana and plantain planting materials between departments. The analysis considers both formal and informal networks, incorporates rare events, and adjusts for the informality proportions of each department.
 
-###### Data Preparation
-
-####### Network of Planting Material
+### Data Preparation
 
 - **Source**: The initial data is sourced from [`DATA_MAP_Network_of_Planting_Material_2023_12_08.csv`](https://github.com/jrobledob/2024_TR4_Project/blob/main/Data_from_surveys_and_direct_sources/DATA_MAP_Network_of_Planting_Material_2023_12_08.csv).
 - **Categories**:
@@ -39,7 +51,7 @@ This script conducts a set the adjacency matrices of movement of banana and plan
   - Adjusted department names to ensure consistency across datasets.
   - Converted percentage values to proportions and imputed missing values with the median.
 
-## Scenarios
+### Scenarios
 
 Two scenarios were developed to model the network:
 
